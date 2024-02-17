@@ -1,7 +1,11 @@
-name: 'deploy producao'
-
+name: 'destroy infra producao'
 on:
-  workflow_call:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'Environment'
+        required: true
+        default: 'prod'
 
 permissions:
   contents: read
@@ -36,5 +40,5 @@ jobs:
       - name: Terraform Plan
         run: terraform plan -input=false
 
-      - name: Terraform Apply
-        run: terraform apply -auto-approve
+      - name: Terraform Destroy
+        run: terraform destroy -auto-approve
