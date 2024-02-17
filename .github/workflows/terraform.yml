@@ -1,13 +1,22 @@
 name: 'deploy producao'
 
 on:
-  workflow_call:
+  pull_request:
+    branches: ['main']
+    types: ['closed']
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'Environment'
+        required: true
+        default: 'prod'
 
 permissions:
   contents: read
 
 jobs:
   terraform:
+    if: github.event.pull_request.merged == true
     name: 'Terraform'
     runs-on: ubuntu-latest
 
