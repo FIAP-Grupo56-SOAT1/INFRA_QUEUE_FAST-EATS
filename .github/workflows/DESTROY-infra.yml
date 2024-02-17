@@ -1,4 +1,4 @@
-name: 'destroy infra producao'
+name: 'DESTROY infra producao'
 on:
   workflow_dispatch:
     inputs:
@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   terraform:
-    name: 'Terraform'
+    name: 'DESTROY infra producao'
     runs-on: ubuntu-latest
 
     defaults:
