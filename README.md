@@ -6,7 +6,7 @@ Este repositório é dedicado à configuração e gerenciamento da infraestrutur
 
 ## Objetivo
 
-O objetivo deste projeto é fornecer uma infraestrutura para comuniacao utilizando o padrão SAGA.
+O objetivo deste projeto é fornecer uma infraestrutura para comunicação utilizando o padrão SAGA.
 
 
 
