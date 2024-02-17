@@ -17,7 +17,7 @@ permissions:
 jobs:
   terraform:
     if: github.event.pull_request.merged == true
-    name: 'Terraform'
+    name: 'Deploy Producao'
     runs-on: ubuntu-latest
 
     defaults:
