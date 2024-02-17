@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   terraform:
-    name: 'DESTROY infra producao'
+    name: 'DESTROY producao'
     runs-on: ubuntu-latest
 
     defaults:
