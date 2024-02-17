@@ -1,4 +1,4 @@
-name: 'implantacao-producao'
+name: 'deploy producao'
 
 on:
   workflow_call:
