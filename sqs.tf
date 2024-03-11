@@ -15,7 +15,16 @@ variable "queue_names" {
     "pagamento-erro-pedido-cancelar",
     "pagamento-receber-pedido-pago",
     "pagamento-gerar-pagamento",
-    "pagamento-erro-pagamento-pedido"
+    "pagamento-erro-pagamento-pedido",
+    "cozinha-receber-pedido",
+    "cozinha-erro-receber-pedido",
+    "pagamento-gerar-pagamento",
+    "pagamento-receber-pedido-pago",
+    "notificar-cliente",
+    "notificar-cliente-pedido-pago",
+    "pagamento-cancelar-pagamento",
+    "pagamento-erro-pagamento-pedido",
+    "pagamento-erro-pedido-cancelar"
   ]
 }
 
